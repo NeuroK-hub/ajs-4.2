@@ -1,3 +1,4 @@
-export default function sortPlayers(players) {
-  return players.sort((a, b) => b.health - a.health);
+export default function sortByHealth(arr) {
+  arr.sort((a, b) => (a.health < b.health ? 1 : -1));
+  return arr;
 }
